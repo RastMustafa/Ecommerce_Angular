@@ -4,17 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { CategorySectionComponent } from './category-section/category-section.component';
+import { CatagoriesFilterComponent } from './category-section/catagories-filter/catagories-filter.component';
+import { CatagoriesDisplayComponent } from './category-section/catagories-display/catagories-display.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    CategorySectionComponent,
+    CatagoriesFilterComponent,
+    CatagoriesDisplayComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
