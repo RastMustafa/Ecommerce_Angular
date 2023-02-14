@@ -1,0 +1,87 @@
+@fontdisplay: 'Open Sans', sans-serif;
+@secondary-lightGreen: #CAF3E5;
+@secondary-lightish: #F0F0F0;
+@primary-dark: #07484A;
+@primary-light: #70908B;
+@fontTitle: 'Playfair Display';
+
+.rate {
+    color: yellow;
+
+    & i {
+        margin: 0.2rem 0.1rem;
+    }
+}
+
+.cardImage {
+    max-height: 10rem;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.cardsContainer {
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 18rem;
+}
+
+::-webkit-scrollbar {
+
+    width: 2px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: @primary-dark;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: @secondary-lightish;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+}
+
+.arrowIcon {
+    width: 2.3rem;
+    margin: 0.2rem 0rem;
+}
+
+.allCategotiesBtn {
+    background-color: @primary-light;
+    color: @secondary-lightish;
+}
+
+@media (min-width: 0px) {
+    .cardsContainer {
+
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .cardsContainer {
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}

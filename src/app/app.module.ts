@@ -10,6 +10,9 @@ import { CatagoriesDisplayComponent } from './category-section/catagories-displa
 import { PopularProductsComponent } from './popular-products/popular-products.component';
 import { NextSlideDirective } from './directives/next-slide/next-slide.directive';
 import { PrevSlideDirective } from './directives/prev-silde/prev-slide.directive';
+import { SpecialPackageComponent } from './special-package/special-package.component';
+import { CardsSectionComponent } from './special-package/cards-section/cards-section.component';
+import { ShowSectionComponent } from './special-package/show-section/show-section.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { PrevSlideDirective } from './directives/prev-silde/prev-slide.directive
     PopularProductsComponent,
     NextSlideDirective,
     PrevSlideDirective,
+    SpecialPackageComponent,
+    CardsSectionComponent,
+    ShowSectionComponent,
   ],
   imports: [BrowserModule],
   providers: [],
