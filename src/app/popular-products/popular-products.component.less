@@ -1,0 +1,144 @@
+@fontdisplay: 'Open Sans', sans-serif;
+@secondary-lightGreen: #CAF3E5;
+@secondary-lightish: #F0F0F0;
+@primary-dark: #07484A;
+@primary-light: #70908B;
+@fontTitle: 'Playfair Display';
+
+
+
+.productsSection {
+    background-image: url('../../assets/images/casino-600x600.jpg');
+    min-height: 50rem;
+    margin-bottom: 30rem;
+    background-repeat: no-repeat;
+    background-position: -200px;
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productCard {
+    min-height: 28rem;
+    max-width: 20rem;
+    min-width: 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+
+.cardContainer {
+    overflow-x: scroll;
+    animation: append-animate 1s ease-in-out;
+
+}
+
+@keyframes append-animate {
+    from {
+        transform: translateX(100%);
+        opacity: 0.8;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: append-animate 1s ease-in;
+}
+
+.nextBtn {
+    position: absolute;
+    bottom: 0rem;
+
+    right: 0rem;
+
+    &:hover {
+
+        cursor: pointer;
+    }
+}
+
+.prevBtn {
+
+    position: absolute;
+    bottom: 0rem;
+    right: 3rem;
+
+    &:hover {
+
+        cursor: pointer;
+    }
+}
+
+.arrowIcon {
+    width: 2.3rem;
+    margin: 0.2rem 0rem;
+}
+
+::-webkit-scrollbar {
+
+    width: 2px;
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: @primary-dark;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: @secondary-lightish;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+}
+
+
+
+
+@media (min-width: 0px) {
+    .productCard {
+        min-height: 20rem;
+        max-width: 15rem;
+        min-width: 15rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .productCard {
+        min-height: 28rem;
+        max-width: 20rem;
+        min-width: 20rem;
+
+    }
+}
+
+.fontTitl {
+    font-family: @fontTitle;
+}
+
+.primaryDark {
+    color: @primary-dark;
+    font-weight: 700;
+}
+.backgroundBlur {
+    backdrop-filter: blur(3px);
+}
+.fontdisplay {
+ font-family: @fontdisplay;
+}

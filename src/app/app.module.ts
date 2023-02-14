@@ -7,6 +7,9 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { CategorySectionComponent } from './category-section/category-section.component';
 import { CatagoriesFilterComponent } from './category-section/catagories-filter/catagories-filter.component';
 import { CatagoriesDisplayComponent } from './category-section/catagories-display/catagories-display.component';
+import { PopularProductsComponent } from './popular-products/popular-products.component';
+import { NextSlideDirective } from './directives/next-slide/next-slide.directive';
+import { PrevSlideDirective } from './directives/prev-silde/prev-slide.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { CatagoriesDisplayComponent } from './category-section/catagories-displa
     CategorySectionComponent,
     CatagoriesFilterComponent,
     CatagoriesDisplayComponent,
+    PopularProductsComponent,
+    NextSlideDirective,
+    PrevSlideDirective,
   ],
   imports: [BrowserModule],
   providers: [],
