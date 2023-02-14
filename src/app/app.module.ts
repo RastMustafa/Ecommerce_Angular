@@ -13,6 +13,7 @@ import { PrevSlideDirective } from './directives/prev-silde/prev-slide.directive
 import { SpecialPackageComponent } from './special-package/special-package.component';
 import { CardsSectionComponent } from './special-package/cards-section/cards-section.component';
 import { ShowSectionComponent } from './special-package/show-section/show-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ShowSectionComponent } from './special-package/show-section/show-sectio
     SpecialPackageComponent,
     CardsSectionComponent,
     ShowSectionComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],
